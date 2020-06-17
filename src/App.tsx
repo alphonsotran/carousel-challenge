@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CarouselContainer from "./containers/CarouselContainer";
+
+const SAMPLE_IMAGES = [
+  "https://www.flickr.com/photos/cameralabs/38054606355",
+  "https://imaging.nikon.com/lineup/dslr/df/sample.htm",
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CarouselContainer images={SAMPLE_IMAGES} />
     </div>
   );
 }
